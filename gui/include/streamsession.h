@@ -27,7 +27,7 @@
 #include <QMouseEvent>
 #include <QTimer>
 
-class QAudioOutput;
+class QAudioSink;
 class QIODevice;
 class QKeyEvent;
 class Settings;
@@ -98,9 +98,9 @@ class StreamSession : public QObject
 		ChiakiPiDecoder *pi_decoder;
 #endif
 
-		QAudioDeviceInfo audio_out_device_info;
+		QAudioDevice audio_out_device_info;
 		unsigned int audio_buffer_size;
-		QAudioOutput *audio_output;
+		QAudioSink *audio_output;
 		QIODevice *audio_io;
 		SDL_AudioDeviceID haptics_output;
 		uint8_t *haptics_resampler_buf;

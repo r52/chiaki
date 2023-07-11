@@ -30,6 +30,7 @@ class SettingsDialog : public QDialog
 		QComboBox *audio_device_combo_box;
 		QCheckBox *pi_decoder_check_box;
 		QComboBox *hw_decoder_combo_box;
+		QComboBox *vsync_combo_box;
 
 		QListWidget *registered_hosts_list_widget;
 		QPushButton *delete_registered_host_button;
@@ -45,6 +46,7 @@ class SettingsDialog : public QDialog
 		void FPSSelected();
 		void BitrateEdited();
 		void CodecSelected();
+		void VsyncSelected();
 		void AudioBufferSizeEdited();
 		void AudioOutputSelected();
 		void HardwareDecodeEngineSelected();
